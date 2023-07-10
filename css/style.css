@@ -42,6 +42,11 @@ body{
 
 }
 
+.carousel{
+    width: 60%;
+    /* height: 10vh; */
+}
+
 .carousel-control{
     width: 15%;
     opacity: .5;
@@ -51,7 +56,7 @@ body{
 
 .carousel-indicator{
     width: 30px;
-    spacer: 3px;
+    space: 3px;
     opacity: 5;
     transition: opacity 1s ease;
 } 
@@ -61,16 +66,18 @@ body{
     width: 70%;
     color: white;
     padding: y 1.25em;
-    spacer: 1.25em;
+    space: 1.25em;
 }
 
-.carousel-control-icon-width:        2rem;
+.carousel-control-icon-width{        
+    width: 2rem;
+}
 
 .carousel-control-prev-icon{
-    background: blanchedalmond;
+    /* background: blanchedalmond; */
 }
 .carousel-control-next-icon{
-    background: blueviolet;
+    /* background: blueviolet; */
 }
 
 .carousel-item{
