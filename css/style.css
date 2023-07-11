@@ -4,7 +4,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(245, 239, 231);
+    background-color: rgb(241, 167, 70);
 }
 .slider{
     width: 800px;
@@ -82,4 +82,15 @@ body{
 
 .carousel-item{
     transition-duration: 3s;
+}
+
+/*css for paragraph*/
+.card{
+   /* height: 30px; */
+}
+.card-body{
+    background: rgb(149, 245, 173);
+}
+.card-content{
+    text-align: center;
 }
