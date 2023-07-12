@@ -86,11 +86,11 @@ body{
 
 /*css for paragraph*/
 .card{
-   /* height: 30px; */
-}
+   /* height: 30px; 
+}*/
 .card-body{
-    background: rgb(149, 245, 173);
-}
+    background: #99ffbb;
+}*/
 .card-content{
     text-align: center;
-}
+} 
