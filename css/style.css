@@ -26,6 +26,14 @@ h1, h2, h3, h4, h5, h6{
 .dropdown-menu{
     border-radius: 0px;
     background-color: #E0C494 !important;
+    color: white;
+}
+
+.dropdown-menu .dropdown-item{
+    width: 100%;
+}
+.dropdown-menu .dropdown-item:hover{
+    width: 100%;
 }
 
 .my-button{
@@ -33,4 +41,8 @@ h1, h2, h3, h4, h5, h6{
     border: none;
     border-radius: 0px;
     /* padding: 5px 10px; */
+}
+
+.carousel{
+    height: 80vh !important;
 }
