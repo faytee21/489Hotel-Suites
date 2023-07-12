@@ -9,3 +9,28 @@ body{
 h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
+
+.navbar{
+    background-color: #E0C494 !important;
+    border: none;
+}
+
+.nav-item{
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    background-color: #EED09C !important;
+}
+
+.dropdown-menu{
+    border-radius: 0px;
+    background-color: #E0C494 !important;
+}
+
+.my-button{
+    background-color: #A18D6A !important;
+    border: none;
+    border-radius: 0px;
+    /* padding: 5px 10px; */
+}
