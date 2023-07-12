@@ -13,15 +13,14 @@ body{
     overflow: hidden;
 }
 .slides{
-    width: 500%;
-    height: 500px;
+    /* width: 500%; */
+    /* height: 500px; */
     display: flex;
 }
 .slides input{
     display: flex;
 }
 .slide{
-    
     transition: 2s;
 }
 /*css for manual navigation*/
@@ -43,7 +42,7 @@ body{
 }
 
 .carousel{
-    width: 60%;
+    width: 70%;
     /* height: 10vh; */
 }
 
