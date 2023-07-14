@@ -2,100 +2,263 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Welcome To The Hotel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Playfair+Display&display=swap" rel="stylesheet">     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 
-    <title>489HOTEL&SUITES</title>
 </head>
 <body>
-    <div id="carouselExampleCaptions" class="carousel slide">
+
+
+    <!-- nav start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" aria-label="Thirteenth navbar example">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+            <a class="navbar-brand col-lg-3 me-0" href="#">
+                <img src="./images/logo-removebg.png" class="img-fluid logo">
+            </a>
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <button class="btn my-button">Button</button>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- end of nav -->
+
+    <!-- carousel start -->
+    <div id="myCarousel" class="carousel slide mb-6 carousel-fade" data-bs-ride="carousel" data-bs-theme="light">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/c1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+            <img src="./images/c3.jpg" class="img-fluid" alt="">
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                <p><a class="my-other-button" href="#">Sign up today</a></p>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/c2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+            <img src="./images/c1.jpg" class="img-fluid" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="my-other-button" href="#">Learn more</a></p>
+              </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/c3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/c4.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/c5.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-
-        <!--paragraph section-->
-
-        <div class="card">
-          <div class="card-body">
-            <div class="card-content">
-              <h2>TITLE1</h2>
-              <h1>CONTENT</h1>
-              <P>More content</P>
-            </div>            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusamus assumenda id eligendi ipsa velit blanditiis, adipisci magnam repudiandae molestiae repellat debitis sit laborum reiciendis quibusdam iusto, cupiditate fuga omnis.  </p>
-          </div>
-        </div> 
-
-        <!--rest of the body-->
-
-        <div class="card mb-3" style="max-width: 900px;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="images/c5.jpg" class="img-fluid rounded-start" alt="cust5">
-            </div>
-            <div class="col-md-8">
-              <div class="card-bodyy">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            <img src="./images/c2.jpg" class="img-fluid" alt="">
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>One more for good measure.</h1>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="my-other-button" href="#">Browse gallery</a></p>
               </div>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
+      <!-- carousel end -->
+
+    <main>
+        <h6 class="my-breadcrumb">HOME > <span class="my-active">experience</span></h6>
+
+        <article>
+
+            <div class="info">
+                <h5 class="text-center text-light home-exp">EXPERIENCE</h5>
+                <h6 class="text-center p-6">EXPERIENCE UNFORGETTABLE LUXURY AT 489HOTEL&SUITES</h6>
+
+                <p class="text-center info-p">
+                    Indulge in a captivating escape at our exceptional hotel, where every moment is designed to exceed your expectations and create unforgettable memories. Discover an experience that seamlessly blends luxurious accommodations, impeccable service, and a host of remarkable amenities.
+                </p>
+                <p class="text-center info-p">
+                    From the moment you step into our elegant lobby, you'll be greeted by a warm and friendly staff dedicated to providing personalized attention and ensuring your comfort throughout your stay. Our commitment to exceptional service is reflected in every detail, from the meticulously appointed rooms to the attentive concierge ready to assist with your every need
+                </p>
+            </div>
+
+            <div class="container-fluid section">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 class="">DINING</h5>
+                        <p class="">
+                            Savor a culinary journey at our exquisite dining venues, where our talented chefs artfully craft delectable dishes using locally sourced ingredients and international flavors. Whether you're in the mood for a sumptuous fine dining experience or a casual meal with friends, our diverse range of culinary offerings will satisfy even the most discerning palate.
+                        </p>
+                        <!--<p class="">
+                            Nairobi National Park is a national park in Kenya that was established in 1946 about 7 kilometres (4.3 mi) south of the centre of Nairobi, Kenya's capital city, with an electric fence separating the park's wildlife from the metropolis.
+                        </p> -->
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./images/c1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./images/c1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="">ACCOMODATION</h5>
+                        <p class="">
+                            Immerse yourself in the tranquility of our thoughtfully designed rooms, each a sanctuary of refined comfort and modern elegance. Indulge in the plush bedding, unwind in the spacious sitting areas, and revel in the breathtaking views that envelop you. Our attention to detail extends to the finest amenities, ensuring that every convenience is at your fingertips
+                        </p>
+                        <!--<p class="">
+                            Nairobi National Park is a national park in Kenya that was established in 1946 about 7 kilometres (4.3 mi) south of the centre of Nairobi, Kenya's capital city, with an electric fence separating the park's wildlife from the metropolis.
+                        </p> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h5 class="">BAR SERVICES</h5>
+                        <p class="">
+                            Our bar is the ideal venue for both intimate gatherings and vibrant social celebrations. Whether you're meeting colleagues for a casual drink, enjoying a romantic evening with a loved one, or celebrating a special occasion with friends, our bar offers a versatile space that can be tailored to your needs. Celebrate life's moments, big or small, in an atmosphere that effortlessly combines sophistication and conviviality.
+                        </p>
+                        <!--<p class="">
+                            Nairobi National Park is a national park in Kenya that was established in 1946 about 7 kilometres (4.3 mi) south of the centre of Nairobi, Kenya's capital city, with an electric fence separating the park's wildlife from the metropolis.
+                        </p>-->
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./images/c1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                
+            </div>
+
+        </article>
+
+        <aside class="container">
+            <div class="row my-section">
+                <div class="col-md-3">
+                    <div class="my-card">
+                        <div class="over">
+                            <img src="./images/c1.jpg" class="img-fluid" alt="">
+                            <!-- <p>HERE</p> -->
+                        </div>
+                        <div class="my-card-body">
+                            <h5 class="my-card-title">Unbeatable Location</h5>
+                            <p class="my-card-text">
+                                Nestled in the heart of [City/Area], our hotel offers easy access to the city's vibrant cultural attractions, renowned landmarks, and exciting entertainment venues. Immerse yourself in the local culture, explore nearby attractions.
+                            </p>
+                            <a href="" class="my-link">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="my-card">
+                        <div class="over">
+                            <img src="./images/c1.jpg" class="img-fluid" alt="">
+                            <!-- <p>HERE</p> -->
+                        </div>
+                        <div class="my-card-body">
+                            <h5 class="my-card-title">Customer Service</h5>
+                            <p class="my-card-text">
+                                Our dedicated team of hospitality professionals is committed to anticipating your needs and exceeding your expectations. From the moment you arrive until your departure, you'll be treated to attentive, discreet, and warm service that ensures your stay is seamless and memorable.
+                            </p>
+                            <a href="" class="my-link">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="my-card">
+                        <div class="over">
+                            <img src="./images/c1.jpg" class="img-fluid" alt="">
+                            <!-- <p>HERE</p> -->
+                        </div>
+                        <div class="my-card-body">
+                            <h5 class="my-card-title">World Class Amenities</h5>
+                            <p class="my-card-text">
+                                Unwind and rejuvenate in our array of world-class amenities. Whether you choose to take a dip in our sparkling pool,we provide everything you need to enhance your well-being and create moments of pure bliss.
+                            </p>
+                            <a href="" class="my-link">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <h5 class="text-center">Contact Details</h5>
+                    <ul>
+                        <li>NAIROBI, KENYA</li>
+                        <li>TEL: +254 20 4233000</li>
+                        <li>EMAIL:
+                            <a href="mailto:hotel@me.com" class="my-link">
+                                Email.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 class="text-center">Our Hotels</h5>
+                </div>
+                <div class="col-md-3 text-center">
+                    <h5 class="text-center">Subscribe</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="my-p">
+                        &copy; 2023 All Rights Reserved. Developed By
+                        <a href="https://www.linkedin.com/in/abdulmajid-osman-ali-ali-9a9b3b1b2/" class="my-link">
+                            HEZEKIAH ELISHA & FAREN ACHIENG
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

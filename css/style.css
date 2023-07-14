@@ -1,96 +1,178 @@
+:root{
+    /* --background-color: #F2F2F2; */
+    --primary-color: #0B8C38;
+    --secondary-color: #7ebf95;
+    --tertiary-color: #F2A71B;
+    --extra: #F2911B;
+    --neutral-color: #F2F2F2;
+}
+
+* {
+    box-sizing: content-box;
+}
+
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(241, 167, 70);
+    background-color: var(--neutral-color);
 }
-.slider{
-    width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.slides{
-    width: 500%;
-    height: 500px;
-    display: flex;
-}
-.slides input{
-    display: flex;
-}
-.slide{
-    
-    transition: 2s;
-}
-/*css for manual navigation*/
-.navigation-manual{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
 
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--extra) !important;
 }
-.manual.btn{
-    border: 2px solid rgb(104, 150, 37);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+p, a{
+    font-family: 'Playfair Display', serif;
+}
 
+.navbar{
+    background-color: var(--primary-color) !important;
+    border: none;
+}
+
+.nav-item{
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    background-color: var(--tertiary-color) !important;
+    color: white !important;
+}
+
+.dropdown-menu{
+    border-radius: 0px;
+    background-color: var(--tertiary-color) !important;
+    color: var(--primary-color);
+}
+
+.dropdown-menu .dropdown-item{
+    width: 100%;
+}
+.dropdown-menu .dropdown-item:hover{
+    width: 85%;
+    color: var(--primary-color);
+}
+
+.my-button{
+    background-color: #A18D6A !important;
+    border: none;
+    border-radius: 0px;
+    /* padding: 5px 10px; */
+}
+
+.my-other-button{
+    background-color: var(--primary-color) !important;
+    border: none;
+    border-radius: 0px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .carousel{
-    width: 60%;
-    /* height: 10vh; */
+    /* height: 80vh !important; */
 }
 
-.carousel-control{
-    width: 15%;
-    opacity: .5;
-    hover-opacity:.9s ease;
-    transition: opacity .15s ease;  
+.my-active{
+    color:  var(--primary-color);
 }
 
-.carousel-indicator{
-    width: 30px;
-    space: 3px;
-    opacity: 5;
-    transition: opacity 1s ease;
-} 
+.my-breadcrumb{
+    padding-left: 20px;
+    padding: 40px;
+}
 
+.home-exp{
+    font-size: 46px;
+    color: var(--extra) !important;
+}
 
-.carousel-caption{
-    width: 70%;
+.info{
+    padding: 60px;
+}
+
+.info-p{
+    padding: 20px;
+}
+footer{
+    background-color: var(--tertiary-color);
+}
+footer h5{
+    color: var(--primary-color) !important;
+    font-weight: 900;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    text-align: left;
+}
+
+.my-link {
+    color: inherit;
+    text-decoration: none;
+}
+  
+.my-link {
+    /* background:
+      linear-gradient(
+        to right,
+        rgb(180, 119, 61),
+        rgb(255, 136, 0)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    ); */
+    background:
+    linear-gradient(
+      to right,
+      var(--neutral-color),
+      var(--primary-color)
+    ),
+    linear-gradient(
+      to right,
+      var(--primary-color),
+      var(--secondary-color),
+        var(--tertiary-color)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.my-link:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.section div div{
+    padding: 45px;
+    text-align: justify;
+}
+
+.my-section .col-md-3{
+    padding: 40px;
+}
+
+.logo{
+    width: 50px;
+}
+.section .row:nth-child(even) h5{
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--primary-color) !important;
+}
+
+.section .row:nth-child(odd){
+    background-color: var(--primary-color);
     color: white;
-    padding: y 1.25em;
-    space: 1.25em;
 }
 
-.carousel-control-icon-width{        
-    width: 2rem;
+.section .row:nth-child(odd) h5{
+    font-size: 26px;
+    font-weight: 900;
 }
-
-.carousel-control-prev-icon{
-    /* background: blanchedalmond; */
-}
-.carousel-control-next-icon{
-    /* background: blueviolet; */
-}
-
-.carousel-item{
-    transition-duration: 3s;
-}
-
-/*css for paragraph*/
-.card{
-   /* height: 30px; 
-}*/
-.card-body{
-    background: #99ffbb;
-}*/
-.card-content{
-    text-align: center;
-} 
